@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -22,6 +23,7 @@ class OrdersSeeder extends Seeder
                 'state' => Str::random(20),
                 'payment_method' => rand(1, 3),
                 'approved' => rand(1, 2),
+                'created_at' => Carbon::today(),
             ],
             [
                 'name' => "Carlos",
@@ -30,6 +32,7 @@ class OrdersSeeder extends Seeder
                 'state' => Str::random(20),
                 'payment_method' => rand(1, 3),
                 'approved' => rand(1, 2),
+                'created_at' => Carbon::today(),
             ],
             [
                 'name' => "Micaela",
@@ -38,6 +41,7 @@ class OrdersSeeder extends Seeder
                 'state' => Str::random(20),
                 'payment_method' => rand(1, 3),
                 'approved' => rand(1, 2),
+                'created_at' => Carbon::today(),
             ],
         ]);
     }

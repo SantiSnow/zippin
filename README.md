@@ -1,4 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center">
+<a href="https://laravel.com" target="_blank">
+<img src="https://raw.githubusercontent.com/SantiSnow/zippin/6786ec4c5f89a9943666709562cb99e8a3080bf3/public/zippin.svg" width="400" alt="Zippin Logo">
+</a>
+</p>
 
 ## About The App
 
@@ -51,3 +55,10 @@ Post request sample:
             }
     }
     
+
+### Possible Fixes/Updates/Functionalities
+
+ - The dashboard is created as an admin panel for owner of the ecommerce. Hence, no one
+should be able to create users from outside the panel. The Register route should be disabled.
+ - Install a payment library. Stripe, PayPal, MercadoPago.
+ - Use DB Transactions. Not implemented given this is a small project created in short time.
