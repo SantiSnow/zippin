@@ -22,7 +22,7 @@ class OrdersController extends Controller
         ]);
     }
 
-    public function getSingle($id): \Illuminate\Http\Response
+    public function getSingle(int $id): \Illuminate\Http\Response
     {
         return response([
             'order' => Order::with('products')->with('shipping_address')->find($id),

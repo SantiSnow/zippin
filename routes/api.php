@@ -22,6 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1'], function (){
     Route::get('/orders', [OrdersController::class, 'getAll'])->name('orders.all');
     Route::get('/order/{id}', [OrdersController::class, 'getSingle'])->name('orders.single');
-
     Route::post('/order', [OrdersController::class, 'store'])->name('orders.store');
 });

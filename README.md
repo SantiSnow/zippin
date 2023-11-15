@@ -62,3 +62,4 @@ Post request sample:
 should be able to create users from outside the panel. The Register route should be disabled.
  - Install a payment library. Stripe, PayPal, MercadoPago.
  - Use DB Transactions. Not implemented given this is a small project created in short time.
+ - Create Unit Tests. Pending
