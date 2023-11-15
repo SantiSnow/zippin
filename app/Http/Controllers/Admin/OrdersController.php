@@ -18,5 +18,14 @@ class OrdersController extends Controller
         ]);
     }
 
+    public function singleOrder(int $id)
+    {
+        return view('order', [
+            'order' => Order::with('shipping_address')
+                ->with('products')
+                ->withCount('products')
+                ->find($id)
+        ]);
+    }
     //TODO: Create single view to see more info about each order
 }

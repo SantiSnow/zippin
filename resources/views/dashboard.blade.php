@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            Orders
         </h2>
     </x-slot>
 
@@ -30,6 +30,9 @@
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Payment status
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    More
                                 </th>
                             </tr>
                         </thead>
@@ -62,10 +65,16 @@
                                             </span>
                                         @endif
                                     </td>
+                                    <td class="px-6 py-4">
+                                        <a href="/order/{{ $order->id }}">Details</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
+                    <div>
+                        {{ $orders->links() }}
+                    </div>
                 </div>
 
             </div>

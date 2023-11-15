@@ -32,6 +32,13 @@
                 padding: .65rem;
                 border-radius: .25rem;
             }
+            .p-12{
+                padding: 2rem;
+            }
+            .mb-4
+            {
+                margin-bottom: 1rem;
+            }
         </style>
     </head>
     <body class="font-sans antialiased">
